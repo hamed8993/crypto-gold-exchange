@@ -1,0 +1,243 @@
+:root {
+  /* Neutral */
+  --Neutral-White: #ffffff;
+  --Neutral-Bg: #fbfbfc;
+  --Neutral-5: #f8f8f9;
+  --Neutral-7: #f4f5f6;
+  --Neutral-10: #e2e2e3;
+  --Neutral-15: #ced2db;
+  --Neutral-20: #bfc4cf;
+  --Neutral-30: #a3a9b6;
+  --Neutral-40: #808080;
+  --Neutral-50: #717886;
+  --Neutral-60: #5b616e;
+  --Neutral-70: #464b55;
+  --Neutral-80: #32353d;
+  --Neutral-90: #1e2025;
+  --Neutral-100: #000000;
+  --Neutral-Solid: #ffffff;
+  --Neutral-Solid-2: #ffffff;
+  --Neutral-Solid-3: #ffffff;
+
+  /* Primary */
+  --Primary-0: #f0fffd;
+  --Primary-5: #d8edfb;
+  --Primary-10: #c0dbfa;
+  --Primary-15: #a8caf8;
+  --Primary-20: #90b8f6;
+  --Primary-30: #78a7f4;
+  --Primary-40: #6095f3;
+  --Primary-50: #3e71cf;
+  --Primary-60: #3c76d0;
+  --Primary-70: #3068af;
+  --Primary-80: #245a8e;
+  --Primary-90: #184b6d;
+  --Primary-100: #0c3d4c;
+
+  /* Navy */
+  --Navy-0: #f2f4f9;
+  --Navy-5: #ebeef6;
+  --Navy-10: #dde2f1;
+  --Navy-15: #cfd7eb;
+  --Navy-20: #bbc8e4;
+  --Navy-30: #95a6d3;
+  --Navy-40: #6a82be;
+  --Navy-50: #465daa;
+  --Navy-60: #354b93;
+  --Navy-70: #2d417c;
+  --Navy-80: #25356e;
+  --Navy-90: #1b264f;
+  --Navy-100: #161e3f;
+  --Navy-100-BG: #070913;
+
+  /* Semantic */
+  --Success-50: #2e7d32;
+  --Success-20: #2e7d3226;
+  --Error-50: #cf202f;
+  --Error-20: #cf202f26;
+  --Warning-50: #ffd200;
+  --Warning-20: #ffd20026;
+  --Info-50: #24ae8f;
+  --Info-20: #24ae8f26;
+  --Orange-50: #f86838;
+  --Orange-20: #f8683826;
+
+  /* Solid */
+  --White-Solid: #ffffff;
+  --Black-Solid: #000000;
+  --Boarder-Solid: #595959;
+  --Gray-Solid: #262626;
+
+  /* old colors */
+  --accentText: #7e7e7e;
+  --accentText50: #8d96a450;
+  --constantLight: #ffffff;
+  --bannerBackground: #101827;
+  --border: #f4f5f7;
+  --mainBackground: #f3f3f3;
+  --secondBackground: #eaeaea;
+  --mainBrand: #1570ef;
+  --mainBrandDisable: #00706e;
+  --mainBrandAlternative: #0d77e7;
+  --mainText: #252525;
+  --negative: #b71c1c;
+  --negative50: #dd0808;
+  --darkRed: #940505;
+  --surface: #e0e0e0;
+  --positive50: #429445;
+  --positive: #2e7d32;
+  --buttonPositive: #2e7d32;
+  --gold: #efbf04;
+  --backdrop: #21262f;
+  --landingMainBackground: #ffffff;
+  --landingSecondaryBackground: #0c111d;
+  --landingSecondarySurface: #141c2f;
+  --landingAccentText: #98a2b3;
+  --landingMainText: #ffffff;
+  --landingSecondaryText: #0c111d;
+  --landingMainBrand: #1570ef;
+  --ownerChatBackground: #437057;
+  --userChatBackground: #1b3c53;
+  --badgeBackgroundGreen: #edffed;
+  --panelLight: #e5e5e5;
+  --paleBackgroundBlue: #f3f5ff;
+  --paleBorderBlue: #1f73b7;
+  --selectionBackground: #e2e8ff;
+  --newColor_textNeutral40: #808080;
+  --newColor_textNeutral100: #0a0b0d;
+  --newColor_borderNeutral10: #e2e2e3;
+  --newColor_textPrimary50: #3e71cf;
+  --newColor_bgPrimary50: #000000;
+  --newColor_bgSuccess50: #2e7d32;
+  --newColor_bgOrange20: #ff6838;
+  --newColor_textError50: #cf202f;
+  --newColor_bgNeutral5: #f8f8f9;
+  --newColor_bgNavy100Bg: #070913;
+  --newColor_borderSolid: #595959;
+  --newColor_bgGraySolid: #262626;
+  --newColor_bgNavy100: #070913;
+  --newColor_bgNeutral15: #ced2db;
+  --newColor_bgNeutral: #fbfbfc;
+}
+
+:root.dark {
+  /* Neutral */
+  --Neutral-White: #0d0f12;
+  --Neutral-Bg: #121418;
+  --Neutral-5: #181b1f;
+  --Neutral-7: #181b1f;
+  --Neutral-10: #22252a;
+  --Neutral-15: #2d3036;
+  --Neutral-20: #393c43;
+  --Neutral-30: #50535b;
+  --Neutral-40: #6d7077;
+  --Neutral-50: #8a8d94;
+  --Neutral-60: #a7a9af;
+  --Neutral-70: #c4c6ca;
+  --Neutral-80: #e1e2e4;
+  --Neutral-90: #f4f5f6;
+  --Neutral-100: #ffffff;
+  --Neutral-Solid: #ffffff;
+  --Neutral-Solid-2: #ffffff;
+  --Neutral-Solid-3: #ffffff;
+
+  /* Primary */
+  --Primary-0: #0b1d2a;
+  --Primary-5: #102f46;
+  --Primary-10: #18446a;
+  --Primary-15: #1f5a8e;
+  --Primary-20: #2a6eb5;
+  --Primary-30: #3a86d9;
+  --Primary-40: #5c9ef1;
+  --Primary-50: #3e71cf;
+  --Primary-60: #9ac5fa;
+  --Primary-70: #b6d6fd;
+  --Primary-80: #d0e6fe;
+  --Primary-90: #e9f5ff;
+  --Primary-100: #f6fcff;
+
+  /* Navy */
+  --Navy-0: #0a0e18;
+  --Navy-5: #111622;
+  --Navy-10: #1a1f2d;
+  --Navy-15: #232837;
+  --Navy-20: #2b3142;
+  --Navy-30: #394159;
+  --Navy-40: #4d5470;
+  --Navy-50: #687091;
+  --Navy-60: #838ca7;
+  --Navy-70: #a0a9bd;
+  --Navy-80: #bdc5d3;
+  --Navy-90: #d8dde3;
+  --Navy-100: #eef0f4;
+  --Navy-100-BG: #343434;
+
+  /* Semantic */
+  --Success-50: #2e7d32;
+  --Success-20: #2e7d3226;
+  --Error-50: #cf202f;
+  --Error-20: #cf202f26;
+  --Warning-50: #ffd200;
+  --Warning-20: #ffd20026;
+  --Info-50: #24ae8f;
+  --Info-20: #24ae8f26;
+  --Orange-50: #f86838;
+  --Orange-20: #f8683826;
+
+  /* Solid */
+  --White-Solid: #ffffff;
+  --Black-Solid: #000000;
+  --Boarder-Solid: #595959;
+  --Gray-Solid: #262626;
+
+  /* old colors */
+  --accentText: #848e9c;
+  --accentText50: #848e9c50;
+  --constantLight: #ffffff;
+  --bannerBackground: #08243a;
+  --border: #353335;
+  --mainBackground: #010002;
+  --secondBackground: #080808;
+  --mainBrand: #1570ef;
+  --mainBrandDisable: #00706e;
+  --mainBrandAlternative: #0d77e7;
+  --mainText: #ffffff;
+  --negative: #b71c1c;
+  --negative50: #dd0808;
+  --darkRed: #940505;
+  --surface: #141414;
+  --positive50: #429445;
+  --positive: #2e7d32;
+  --buttonPositive: #2e7d32;
+  --gold: #efbf04;
+  --backdrop: #21262f;
+  --landingMainBackground: #ffffff;
+  --landingSecondaryBackground: #0c111d;
+  --landingSecondarySurface: #141c2f;
+  --landingAccentText: #98a2b3;
+  --landingMainText: #ffffff;
+  --landingSecondaryText: #0c111d;
+  --landingMainBrand: #1570ef;
+  --ownerChatBackground: #437057;
+  --userChatBackground: #1b3c53;
+  --badgeBackgroundGreen: #edffed;
+  --panelLight: #e5e5e5;
+  --paleBackgroundBlue: #f3f5ff;
+  --paleBorderBlue: #1f73b7;
+  --selectionBackground: #e2e8ff;
+  --newColor_textNeutral40: #6d7077;
+  --newColor_textNeutral100: #0a0b0d;
+  --newColor_borderNeutral10: #22252a;
+  --newColor_textPrimary50: #3e71cf;
+  --newColor_bgPrimary50: #000000;
+  --newColor_bgSuccess50: #2e7d32;
+  --newColor_bgOrange20: #ff6838;
+  --newColor_textError50: #cf202f;
+  --newColor_bgNeutral5: #181b1f;
+  --newColor_bgNavy100Bg: #070913;
+  --newColor_borderSolid: #595959;
+  --newColor_bgGraySolid: #262626;
+  --newColor_bgNavy100: #343434;
+  --newColor_bgNeutral15: #2d3036;
+  --newColor_bgNeutral: #121418;
+}

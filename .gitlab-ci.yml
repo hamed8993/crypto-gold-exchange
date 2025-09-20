@@ -1,0 +1,16 @@
+stages:
+  - trigger
+
+trigger_http_request:
+  stage: trigger
+  tags:
+    - goldfino
+  script:
+    - |
+      if [ "$CI_COMMIT_REF_NAME" == "dev" ]; then
+        curl -H "Custom-Header: YourCustomHeaderValue" --max-time 60 http://$HOST_IP:4000/desktop_nextjs/dev
+      elif [ "$CI_COMMIT_REF_NAME" == "main" ]; then
+        curl -H "Custom-Header: YourCustomHeaderValue" --max-time 60 http://$HOST_IP:4000/desktop_nextjs/main
+      else
+        echo "Branch not configured for deployment."
+      fi

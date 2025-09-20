@@ -1,0 +1,102 @@
+import clsx from "clsx";
+import { useTranslations } from "next-intl";
+
+interface PasswordConditionSectionProps {
+  password: string;
+}
+
+function PasswordConditionSection({ password }: PasswordConditionSectionProps) {
+  const t = useTranslations();
+
+  const checkCharacterLength = () => {
+    return password.length >= 8;
+  };
+
+  const checkHasNumber = () => {
+    return /\d/.test(password);
+  };
+
+  const checkHasLowercase = () => {
+    return /[a-z]/.test(password);
+  };
+
+  const checkHasUppercase = () => {
+    return /[A-Z]/.test(password);
+  };
+
+  return (
+    <div className="flex flex-col items-start gap-2">
+      <p className="text-accentText mt-4 text-xs">{t("passwordMustContain")}</p>
+
+      <div className="mt-2 flex h-14 w-full items-center justify-start">
+        <div className="flex min-h-14 w-[30%] flex-col items-start justify-around">
+          <div className="flex items-center gap-2">
+            {checkCharacterLength() ? (
+              <div className="bg-mainBrand flex h-4 w-[2px] rounded-full" />
+            ) : (
+              <div className="bg-accentText flex h-4 w-[2px] rounded-full" />
+            )}
+            <span
+              className={clsx(
+                "text-xs",
+                checkCharacterLength() ? "text-mainBrand" : "text-accentText",
+              )}
+            >
+              {t("atLeast8characters")}
+            </span>
+          </div>
+          <div className="flex items-center gap-2">
+            {checkHasNumber() ? (
+              <div className="bg-mainBrand flex h-4 w-[2px] rounded-full" />
+            ) : (
+              <div className="bg-accentText flex h-4 w-[2px] rounded-full" />
+            )}
+            <span
+              className={clsx(
+                "text-xs",
+                checkHasNumber() ? "text-mainBrand" : "text-accentText",
+              )}
+            >
+              {t("includeNumber")}
+            </span>
+          </div>
+        </div>
+
+        <div className="flex min-h-14 w-[30%] flex-col items-start justify-around">
+          <div className="flex items-center gap-2">
+            {checkHasLowercase() ? (
+              <div className="bg-mainBrand flex h-4 w-[2px] rounded-full" />
+            ) : (
+              <div className="bg-accentText flex h-4 w-[2px] rounded-full" />
+            )}
+            <span
+              className={clsx(
+                "text-xs",
+                checkHasLowercase() ? "text-mainBrand" : "text-accentText",
+              )}
+            >
+              {t("lowercaseCharacter")}
+            </span>
+          </div>
+          <div className="flex items-center gap-2">
+            {checkHasUppercase() ? (
+              <div className="bg-mainBrand flex h-4 w-[2px] rounded-full" />
+            ) : (
+              <div className="bg-accentText flex h-4 w-[2px] rounded-full" />
+            )}
+            <span
+              className={clsx(
+                "text-xs",
+                checkHasUppercase() ? "text-mainBrand" : "text-accentText",
+              )}
+            >
+              {t("uppercaseCharacter")}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default PasswordConditionSection;

@@ -1,0 +1,9 @@
+@layer molecules {
+  .empty {
+    align-items: end;
+    height: 120px;
+    justify-content: center;
+    position: relative;
+    width: 120px;
+  }
+}

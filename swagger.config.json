@@ -1,0 +1,8 @@
+[
+  {
+    "url": "https://data-d.goldfino.com/swagger",
+    "dir": "./src/core/services",
+    "reactHooks": true,
+    "generateEnumAsType": true
+  }
+]

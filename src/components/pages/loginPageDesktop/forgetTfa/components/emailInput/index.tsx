@@ -1,0 +1,42 @@
+import { emailPattern } from "@/core/constants/regex";
+import InputDefault from "@/shared/atoms/inputDefault";
+import { useTranslations } from "next-intl";
+import { Controller } from "react-hook-form";
+import { useLoginContext } from "../../../provider";
+
+function EmailInput() {
+  const t = useTranslations();
+  const { control, errors, clearErrors, setValue, watch } = useLoginContext();
+
+  return (
+    <Controller
+      control={control}
+      name={"resetTfaEmail"}
+      render={({ field }) => (
+        <InputDefault
+          {...field}
+          placeholder={t("enterYourEmail")}
+          label={t("email")}
+          inputMode="decimal"
+          wrapperClassName="w-[380px]!"
+          error={errors?.resetTfaEmail?.message}
+          className="h-12! py-0! placeholder:text-textPlaceholder"
+          onChange={(e) => {
+            clearErrors("resetTfaEmail");
+            setValue("resetTfaEmail", e.target.value);
+          }}
+          value={watch("resetTfaEmail")}
+        />
+      )}
+      rules={{
+        required: { message: t("pleaseFillInput"), value: true },
+        pattern: {
+          message: t("invalidEmail"),
+          value: emailPattern,
+        },
+      }}
+    />
+  );
+}
+
+export default EmailInput;
